@@ -69,6 +69,40 @@ div.site-content#content {
     width: 100vw;
     // margin-top: 140px;
 
+    .section-evenements {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    
+        .section-evenements-conteneur {
+            // background-color: black;
+            width: 50vw;
+            // display: flex;
+            // justify-content: center;
+
+            ul {
+                list-style-type: lower-greek;
+                display: flex;
+                flex-direction: column;
+                li {
+                    
+                    align-self: center;
+                    div {
+                        display: flex;
+                        justify-content: left;
+                        img {
+                            width: 30%;
+                        }
+                        h3 {
+                            align-self: center;
+                            padding-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     #main {
         a {
 
@@ -102,3 +136,6 @@ div.site-content#content {
         text-align: center;
     }
 }
+
+
+

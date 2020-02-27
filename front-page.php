@@ -39,6 +39,32 @@ get_header();
         
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<div class='section-evenements'>
+		<div class="section-evenements-conteneur">
+			<h1>Événements!</h1>
+			<ul>
+				<?php 
+				// the query
+				$the_query = new WP_Query( array(
+					'category_name' => 'evenement',
+					'posts_per_page' => 4,
+				)); 
+				?>
+
+				<?php if ( $the_query->have_posts() ) : ?>
+				<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+				
+				<li><div><?php the_post_thumbnail() ?><h3><?php the_title(); ?></h3></div></li>
+
+				<?php endwhile; ?>
+				<?php wp_reset_postdata(); ?>
+
+				<?php else : ?>
+				<li><?php __("Pas d'événement"); ?></li>
+				<?php endif; ?>
+			</ul>
+		</div>
+	</div>
 
 <?php
 get_sidebar();
