@@ -1,3 +1,104 @@
 body {
-    margin: 0 10vw;
+    // margin: 0 10vw;
+}
+
+header.site-header#masthead {
+    position: absolute;
+    top: 0;
+    height: 140px;
+    padding: 0 10vw;
+    padding-top: 40px;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+
+    .site-title > a {
+        font-size: 3em;
+        color: white;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    .site-branding {
+        display: flex;
+    }
+
+    #site-navigation {
+        width: 50%;
+    }
+    
+
+    #site-navigation {
+        line-height: 100px;
+        
+
+        .menu-nav_main-container {
+            width: 100%;
+
+            #primary-menu {
+                display: flex;
+                justify-content: space-evenly;
+
+                .menu-item-has-children {
+                    .sub-menu {
+                        li {
+                            background-color: gray;
+                        }
+                    }
+                }
+            }
+        }
+
+        a {
+            color: white;
+        }
+        
+    }
+}
+
+#primary {
+    margin: 0 140px;
+}
+
+div.site-content#content {
+    width: 100vw;
+    // margin-top: 140px;
+
+    #main {
+        a {
+
+            text-decoration: none;
+            color: black;
+            h1 {
+                
+            }
+        }
+    }
+
+    img.hero-img-pc {
+        width: 100vw;
+    }
+
+    .pc-site-title {
+        position: absolute;
+        top: 0;
+        left: 140px;
+        margin-top: 300px;
+        color: #fff;
+        font-size: 6em;
+    }
+}
+
+.site-footer {
+
+    margin: 40px 0;
+
+    .site-info {
+        text-align: center;
+    }
 }

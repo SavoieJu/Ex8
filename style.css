@@ -384,8 +384,100 @@ template {
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
-body {
-  margin: 0 10vw;
+header.site-header#masthead {
+  position: absolute;
+  top: 0;
+  height: 140px;
+  padding: 0 10vw;
+  padding-top: 40px;
+  left: 0;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: black;
+  color: white;
+}
+
+header.site-header#masthead .site-title > a {
+  font-size: 3em;
+  color: white;
+}
+
+header.site-header#masthead a {
+  text-decoration: none;
+}
+
+header.site-header#masthead .site-branding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.site-header#masthead #site-navigation {
+  width: 50%;
+}
+
+header.site-header#masthead #site-navigation {
+  line-height: 100px;
+}
+
+header.site-header#masthead #site-navigation .menu-nav_main-container {
+  width: 100%;
+}
+
+header.site-header#masthead #site-navigation .menu-nav_main-container #primary-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+header.site-header#masthead #site-navigation .menu-nav_main-container #primary-menu .menu-item-has-children .sub-menu li {
+  background-color: gray;
+}
+
+header.site-header#masthead #site-navigation a {
+  color: white;
+}
+
+#primary {
+  margin: 0 140px;
+}
+
+div.site-content#content {
+  width: 100vw;
+}
+
+div.site-content#content #main a {
+  text-decoration: none;
+  color: black;
+}
+
+div.site-content#content img.hero-img-pc {
+  width: 100vw;
+}
+
+div.site-content#content .pc-site-title {
+  position: absolute;
+  top: 0;
+  left: 140px;
+  margin-top: 300px;
+  color: #fff;
+  font-size: 6em;
+}
+
+.site-footer {
+  margin: 40px 0;
+}
+
+.site-footer .site-info {
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
