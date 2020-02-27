@@ -131,9 +131,16 @@ div.site-content#content {
 .site-footer {
 
     margin: 40px 0;
+    color: black;
 
+    
     .site-info {
         text-align: center;
+
+        a {
+            color: black;
+        }
+    
     }
 }
 

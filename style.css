@@ -525,10 +525,15 @@ div.site-content#content .pc-site-title {
 
 .site-footer {
   margin: 40px 0;
+  color: black;
 }
 
 .site-footer .site-info {
   text-align: center;
+}
+
+.site-footer .site-info a {
+  color: black;
 }
 
 /*--------------------------------------------------------------
